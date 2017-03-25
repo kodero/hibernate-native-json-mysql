@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<persistence version="2.0"
+             xmlns="http://java.sun.com/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="
+        http://java.sun.com/xml/ns/persistence
+        http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd">
+    <persistence-unit name="primary">
+        <jta-data-source>java:jboss/datasources/SBDS</jta-data-source>
+        <properties>
+            <!-- Properties for Hibernate -->
+            <property name="hibernate.hbm2ddl.auto" value="update"/>
+            <property name="hibernate.show_sql" value="true"/>
+            <property name="hibernate.format_sql" value="true"/>
+            <property name="hibernate.id.new_generator_mappings" value="false"/>
+            <property name="hibernate.dialect" value="com.corvid.inventory.util.LemrMySQL5HibernateDialect"/>
+            <property name="hibernate.binary_or_blob" value="blob"/>
+            <!-- <property name="hibernate.zeroDateTimeBehavior" value="convertToNull" />-->
+            <!--<property name="hibernate.ejb.interceptor"   value="com.lemr.model.base.AuditLogInterceptor" />-->
+        </properties>
+
+    </persistence-unit>
+</persistence>
