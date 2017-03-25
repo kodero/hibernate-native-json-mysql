@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 hibernate-native-json
 =================
 
@@ -108,5 +107,4 @@ This in produce the following DDL:
 
 =======
 # hibernate-native-json-mysql
-A hibernate user type for mysql 
->>>>>>> c107667bdc64e78a9bd02952830c63861f6d794b
+A hibernate user type for mysql
