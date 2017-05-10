@@ -35,7 +35,7 @@ public class MyClass {
 
 Keep in mind, for collections @org.hibernate.annotations.Target is mandatory.
 
-In order to be able to persist, query and generate DDL for this objects you need to set hibernate dialect to `PostgreSQLJsonDialect`.
+In order to be able to persist, query and generate DDL for this objects you need to set hibernate dialect to `MySQL57InnoDBDialect`.
 
 
 ```
@@ -105,6 +105,4 @@ This in produce the following DDL:
     )
 ```
 
-=======
-# hibernate-native-json-mysql
-A hibernate user type for mysql
+
